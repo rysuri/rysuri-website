@@ -1,0 +1,21 @@
+.navbar {
+  background-color: rgb(190, 190, 190);
+}
+
+.navbar-content{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.navbar-link{
+  background-color: aliceblue;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-link:hover {
+  background-color: #ff00e1;
+}
