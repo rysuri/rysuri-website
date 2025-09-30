@@ -1,6 +1,8 @@
-.home {
-  background-color:pink;
-  width:100px;
-  height:100px;
-  padding:100px;
+.Home {
+  background-color: #ff0000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
