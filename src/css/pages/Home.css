@@ -1,8 +1,32 @@
 .home {
-  background-color: #ff0000;
+  background-color: #ffffff;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+.hero {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding-bottom:50px;
+}
+
+.hero-name h5{
+  margin-bottom: 0px;
+  font-size:15px
+}
+.hero p{
+  margin-top: 0px;
+  padding-left:5px;
+  padding-right:5px;
+  font-size:14px;
+
+}
+
+.hero-links{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 }

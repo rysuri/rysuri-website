@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/footer.jsx";
 
 import Home from "./pages/Home.jsx";
-import Portfolio from "./pages/Portolio.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 import Contact from "./pages/Contact.jsx";
 
 function App() {
