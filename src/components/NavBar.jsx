@@ -14,13 +14,13 @@ function NavBar() {
 
         <div className="navbar-links">
           <Link to="/" className="nav-link">
-            Home
+            About
           </Link>
           <Link to="/portfolio" className="nav-link">
             Portolio
           </Link>
-          <Link to="/partners" className="nav-link">
-            Partners
+          <Link to="/contact" className="nav-link">
+            Contact
           </Link>
         </div>
 

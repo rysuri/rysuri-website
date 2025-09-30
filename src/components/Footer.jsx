@@ -2,10 +2,15 @@ import "../css/components/Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer" role="contentinfo">
-      <div className="footer-bottom">
+    <footer className="footer">
+      <div className="copy">
         <p>
-          © {new Date().getFullYear()}. All rights reserved.
+          © {new Date().getFullYear()} SURIYATHEP
+        </p>
+      </div>
+      <div className="copy">
+        <p>
+          All rights reserved. | rysuri.com
         </p>
       </div>
     </footer>
