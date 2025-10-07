@@ -1,0 +1,18 @@
+.portfolio {
+  background-color: #ffffff;
+  justify-content: left;
+  display: block;
+  font-size: 24px;
+
+  max-width: 1000px;
+  margin: 10vh auto;
+  padding: 0 2rem;
+}
+
+.showcase{  
+  display:grid;
+  flex-direction: row;
+  justify-content: center;}
+.portfolio p{
+  font-size:16px;
+}
