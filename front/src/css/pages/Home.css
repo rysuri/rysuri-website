@@ -4,56 +4,183 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
-
-
 }
 .hero {
   display: block;
   align-items: center;
   text-align: center;
-  margin-top:37vh;
-  margin-bottom:50vh;
+  margin-top: 37vh;
+  margin-bottom: 50vh;
 }
 
-.hero-name h5{
+.hero-name h5 {
   margin-bottom: 0px;
-  font-size:15px
+  font-size: 15px;
 }
-.hero p{
+.hero p {
   margin-top: 0px;
-  padding-left:5px;
-  padding-right:5px;
-  font-size:14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
 }
 
-.hero a{
+.hero a {
   margin-top: 0px;
-  padding-left:5px;
-  padding-right:5px;
-  font-size:14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
   text-decoration: none;
 }
 
-.hero-links{
-  display:flex;
+.hero-links {
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.about-me-section{
-  
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom:10vh;
-
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 2rem;
-
-
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+  padding: 6rem 4rem;
+  color: #000000a6;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: 15vh auto;
 }
-.end-directory{
+
+.about-left {
+  flex: 1.2;
+}
+
+.about-left h5 {
+  color: #000000;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.about-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+.highlight {
+  color: rgb(0, 113, 227);
+}
+
+.about-info {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.about-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #5f5f5f;
+}
+
+.info-icon {
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.about-left p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-size: 20px;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right h3 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid span {
+  background-color: #e6e6e64d;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  box-shadow: 0px 3px 5px #999;
+  border-radius: 30px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  color: #000000;
+}
+
+.skills-grid span:hover {
+  background: rgb(0, 113, 227);
+  color: #fff;
+}
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.cert-item:hover {
+  background: #2424243f;
+  transform: translateY(-3px);
+}
+
+.cert-badge {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.cert-item strong {
+  color: #000000;
+  font-size: 1rem;
+}
+
+.cert-item p {
+  color: #555555;
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.end-directory {
   display: block;
   justify-content: center;
   align-items: center;
@@ -61,29 +188,27 @@
   margin-bottom: 20vh;
 }
 
-.end-directory h1{
+.end-directory h1 {
   text-align: center;
-  font-size:30px;
-  
-
+  font-size: 30px;
 }
-.end-links{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+.end-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.end-links p{
+.end-links p {
   margin-top: 0px;
-  padding-left:5px;
-  padding-right:5px;
-  font-size:14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
 }
 
-.end-link{
+.end-link {
   margin-top: 0px;
-  padding-left:5px;
-  padding-right:5px;
-  font-size:14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
   text-decoration: none;
 }

@@ -1,15 +1,25 @@
 .comment-section {
-  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "form list"
+    "pagination pagination";
+  max-width: 1100px;
   margin: 2rem auto;
-  padding: 1rem;
-  background: #f5f5f5;
-  border-radius: 12px;
+  padding: 1.5rem;
+  min-height: 50vh;
+  gap: 1.25rem;
 }
 
 .comment-form {
+  grid-area: form;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+  align-self: stretch;
+  height: 100%;
 }
 
 .comment-form input,
@@ -17,15 +27,118 @@
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-form textarea {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.comment-form button {
+  padding: 10px;
+  background-color: rgb(0, 113, 227);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
 }
 
 .comment-list {
-  margin-top: 1.5rem;
+  grid-area: list;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-self: stretch;
+
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
 .comment {
   background: white;
   border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  color: #000000;
+}
+
+.comment p {
+  font-size: 16px;
+  margin: 0px;
+  padding: 3px 3px;
+}
+.message {
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  grid-area: header;
+}
+.pagination {
+  grid-area: pagination;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0;
+}
+
+.pagination button {
+  border: none;
+  background: #e0e0e0;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination button:hover {
+  background: #d0d0d0;
+}
+
+.pagination button.active {
+  background: rgb(0, 113, 227);
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .comment-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header"
+      "form"
+      "list"
+      "pagination";
+  }
+
+  .comment-form,
+  .comment-list {
+    width: 100%;
+  }
+
+  .comment-form textarea {
+    min-height: 140px;
+  }
 }
