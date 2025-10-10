@@ -4,7 +4,14 @@ import "../css/pages/Home.css";
 import { Link } from "react-router-dom";
 
 import CommentSection from "../components/CommentSection.jsx";
-import { MapPin, GraduationCap, Laptop, Award } from "lucide-react";
+import {
+  MapPin,
+  GraduationCap,
+  Laptop,
+  Award,
+  Github,
+  Mail,
+} from "lucide-react";
 
 function Home() {
   useGSAP(() => {
@@ -74,6 +81,9 @@ function Home() {
               technology. I focus on frontend and web application development,
               while aspiring toward game design and AI-driven systems.
             </p>
+            <Github />
+            <Mail />
+
             {/* <div className="about-buttons">
               <a href="/contact" className="btn-primary">
                 Get in Touch
@@ -85,7 +95,7 @@ function Home() {
           </div>
 
           <div className="about-right">
-            <h3>Key Skills</h3>
+            <h3>Skills and Languages</h3>
             <div className="skills-grid">
               <span>React</span>
               <span>Python</span>
@@ -94,7 +104,9 @@ function Home() {
               <span>Assembly</span>
               <span>Shopify</span>
               <span>WordPress</span>
-              <span>AWS</span>
+              <span>Vue.js</span>
+              <span>Github</span>
+              <span>Lua</span>
             </div>
 
             <h3>Certifications</h3>
@@ -127,7 +139,7 @@ function Home() {
         </div>
 
         <CommentSection />
-
+        {/* 
         <div className="end-directory">
           <h1>Oh wait there is more!</h1>
           <div className="end-links">
@@ -139,7 +151,7 @@ function Home() {
               View porfolio
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

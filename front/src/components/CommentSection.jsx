@@ -92,51 +92,40 @@ function CommentSection() {
           <div key={c.id} className="comment">
             <p>
               <strong>{c.name}</strong> (
-              {new Date(c.timestamp).toLocaleDateString(undefined, {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}{" "}
-              @{" "}
-              {new Date(c.timestamp).toLocaleTimeString(undefined, {
-                hour: "numeric",
-                minute: "2-digit",
-                hour12: true,
-              })}
-              )
+              {new Date(c.timestamp).toLocaleString()})
             </p>
             <p className="message">{c.message}</p>
           </div>
         ))}
-      </div>
 
-      {totalPages > 1 && (
-        <div className="pagination">
-          <button
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-          >
-            ← Prev
-          </button>
-
-          {[...Array(totalPages)].map((_, i) => (
+        {totalPages > 1 && (
+          <div className="pagination">
             <button
-              key={i}
-              className={currentPage === i + 1 ? "active" : ""}
-              onClick={() => handlePageChange(i + 1)}
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
             >
-              {i + 1}
+              ← Prev
             </button>
-          ))}
 
-          <button
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-          >
-            Next →
-          </button>
-        </div>
-      )}
+            {[...Array(totalPages)].map((_, i) => (
+              <button
+                key={i}
+                className={currentPage === i + 1 ? "active" : ""}
+                onClick={() => handlePageChange(i + 1)}
+              >
+                {i + 1}
+              </button>
+            ))}
+
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next →
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

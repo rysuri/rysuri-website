@@ -12,7 +12,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-brand">
-          <Link to="/">Suriyathep</Link>
+          <Link to="/">SURIYATHEP</Link>
         </div>
 
         <div className="navbar-links" id="navbar-links">
