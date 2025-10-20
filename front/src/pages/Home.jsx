@@ -11,17 +11,22 @@ import {
   Award,
   Github,
   Mail,
+  FileDown,
 } from "lucide-react";
 
 function Home() {
   useGSAP(() => {
-    gsap.from("#hero-section", {
-      y: -50,
+    gsap.from("#hero-tag", {
+      y: 20,
       opacity: 0,
       duration: 0.7,
     });
+    gsap.from("#hero-name", {
+      opacity: 0,
+      duration: 1.5,
+    });
     gsap.from("#hero-links", {
-      y: 20,
+      y: -20,
       opacity: 0,
       duration: 0.7,
     });
@@ -30,27 +35,39 @@ function Home() {
     <>
       <div className="home">
         <div className="hero">
-          <div className="hero-name" id="hero-section">
-            <h5>Web Developer at UNLV</h5>
-            <h3>RY SURIYATHEP</h3>
-          </div>
-
           <div className="hero-links" id="hero-links">
             <a
               className="link"
               href="https://docs.google.com/document/d/1OsWHSLnUA-n_WKq6hNvaLf2t8kVH6hJx_6Pbf2tsuxE/edit?tab=t.0"
+              target="_blank"
             >
               Resume
             </a>
             <p>|</p>
-            <a className="link" href="https://www.youtube.com/@ryvsu">
+            <a
+              className="link"
+              href="https://www.youtube.com/@ryvsu"
+              target="_blank"
+            >
               Youtube
             </a>
             <p>|</p>
-            <a className="link" href="www.linkedin.com/in/rysuri">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/rysuri"
+              target="_blank"
+            >
               LinkedIn
             </a>
           </div>
+
+          <h3 className="hero-name" id="hero-name">
+            RY SURIYATHEP
+          </h3>
+
+          <h4 className="hero-tag" id="hero-tag">
+            Web Developer at UNLV
+          </h4>
         </div>
 
         <div className="about-me-section">
@@ -81,17 +98,11 @@ function Home() {
               technology. I focus on frontend and web application development,
               while aspiring toward game design and AI-driven systems.
             </p>
-            <Github />
-            <Mail />
-
-            {/* <div className="about-buttons">
-              <a href="/contact" className="btn-primary">
-                Get in Touch
-              </a>
-              <a href="/portfolio" className="btn-secondary">
-                View Projects
-              </a>
-            </div> */}
+            <div>
+              <p id="email">
+                <Mail className="info-icon" /> rysu986@gmail.com
+              </p>
+            </div>
           </div>
 
           <div className="about-right">

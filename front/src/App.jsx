@@ -8,6 +8,8 @@ import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Contact from "./pages/Contact.jsx";
 
+import GradualBlur from "./components/GradualBlur";
+
 function App() {
   return (
     <>
@@ -19,6 +21,16 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      <GradualBlur
+        target="parent"
+        position="bottom"
+        height="6rem"
+        strength={2}
+        divCount={5}
+        curve="bezier"
+        exponential={true}
+        opacity={1}
+      />
       <Footer />
     </>
   );

@@ -5,6 +5,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
+import { User, Send, LibraryBig } from "lucide-react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function NavBar() {
@@ -17,12 +19,15 @@ function NavBar() {
 
         <div className="navbar-links" id="navbar-links">
           <Link to="/" className="nav-link">
+            <User className="info-icon-nav" />
             About
           </Link>
           <Link to="/portfolio" className="nav-link">
+            <LibraryBig className="info-icon-nav" />
             Portolio
           </Link>
           <Link to="/contact" className="nav-link">
+            <Send className="info-icon-nav" />
             Contact
           </Link>
         </div>

@@ -4,63 +4,62 @@
   align-items: center;
   font-size: 24px;
 }
+
 .hero {
   display: block;
   align-items: center;
   text-align: center;
-  margin-top: 37vh;
+  margin-top: 38vh;
   margin-bottom: 50vh;
   color: #f9fafb;
 }
 
-.hero-arrow {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-name {
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  margin: 25px;
 }
 
-.hero-arrow svg {
-  width: 20px;
-  height: 20px;
-  color: #000000; /* red-ish */
-  stroke-width: 1.5;
-  animation: arrow-bounce 1.6s infinite;
-}
-@keyframes arrow-bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-.hero-name h5 {
-  margin-bottom: 0px;
-  font-size: 15px;
-}
 .hero p {
   margin-top: 0px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: #f9fafb;
+  margin-bottom: 0px;
 }
 
 .hero a {
   margin-top: 0px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
   color: #f9fafb;
+}
+
+.hero-tag {
+  margin: 25px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: rgb(156, 163, 176);
+  font-weight: 400;
 }
 
 .hero-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.link {
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.link:hover {
+  color: #f9fafb;
+  transform: translateY(-2px);
 }
 
 .about-me-section {

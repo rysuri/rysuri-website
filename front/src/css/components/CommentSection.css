@@ -1,110 +1,144 @@
+/* ===========================
+   BASE SECTION
+=========================== */
 .comment-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header header"
-    "form list"
-    "pagination pagination";
   max-width: 1100px;
   margin: 2rem auto;
-  padding: 1.5rem;
-  min-height: 50vh;
-  gap: 1.25rem;
-}
-
-.comment-form {
-  grid-area: form;
+  color: white;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  align-self: stretch;
-  height: 100%;
+  gap: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.comment-title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+.comment-container {
+  display: grid;
+  grid-template-columns: 350px 1fr; /* left = fixed width */
+  gap: 10px;
+  /* background-color: red; */
+}
+
+/* Right column as flex container */
+.comment-right-column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+/* ===========================
+   COMMENT FORM
+=========================== */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
 }
 
 .comment-form input,
 .comment-form textarea {
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(31, 41, 55);
+
   font-size: 15px;
-  width: 100%;
-  box-sizing: border-box;
+
+  background: rgb(3, 7, 17);
+  color: white;
+  resize: none;
 }
 
 .comment-form textarea {
-  flex: 1 1 auto;
-  min-height: 0;
+  flex: 1; /* fills available space */
+  min-height: 100px;
 }
 
 .comment-form button {
   padding: 10px;
   background-color: rgb(0, 113, 227);
+  font-family: "Inter", sans-serif;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-  width: 100%;
 }
 
 .comment-form button:hover {
   background-color: #0056b3;
 }
 
+/* ===========================
+   COMMENT LIST
+=========================== */
 .comment-list {
-  grid-area: list;
-  margin-top: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-  align-self: stretch;
-
-  height: 100%;
-  overflow-y: auto;
-  padding-right: 6px;
+  gap: 7px;
 }
 
 .comment {
-  background: white;
+  border: 1px solid rgb(31, 41, 55);
   border-radius: 8px;
-  padding: 10px 10px;
-  border: 1px solid #ddd;
-  color: #000000;
+  padding: 15px;
+  background: #11111100;
 }
 
-.comment p {
-  font-size: 16px;
-  margin: 0px;
-  padding: 3px 3px;
-}
-.message {
+.comment-header {
+  margin: 0;
   font-size: 15px;
-  padding: 0px;
-  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
 }
 
-.header {
-  grid-area: header;
+.comment-date {
+  font-size: 13px;
+  color: #888;
 }
+
+.comment-message {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: white;
+}
+
+.no-comments {
+  text-align: center;
+  color: #aaa;
+  padding: 20px 0;
+}
+
+/* ===========================
+   PAGINATION
+=========================== */
 .pagination {
-  grid-area: pagination;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
-  margin-top: 0;
+  padding: 19px 0px 0px 0px;
+  margin-top: auto; /* anchors pagination to bottom */
 }
 
 .pagination button {
   border: none;
-  background: #e0e0e0;
-  color: #333;
+  background: #f9fafb;
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s;
+  font-family: "Inter", sans-serif;
 }
 
 .pagination button:hover {
@@ -113,7 +147,7 @@
 
 .pagination button.active {
   background: rgb(0, 113, 227);
-  color: white;
+  color: #f9fafb;
   font-weight: bold;
 }
 
@@ -122,23 +156,19 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 700px) {
-  .comment-section {
+/* ===========================
+   MOBILE
+=========================== */
+@media (max-width: 800px) {
+  .comment-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-      "header"
-      "form"
-      "list"
-      "pagination";
   }
 
-  .comment-form,
-  .comment-list {
-    width: 100%;
+  .comment-form {
+    order: 1;
   }
 
-  .comment-form textarea {
-    min-height: 140px;
+  .comment-right-column {
+    order: 2;
   }
 }

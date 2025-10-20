@@ -5,7 +5,7 @@ import "../css/pages/Porfolio.css";
 import calderonThumb from "../assets/media/calderon-thumbnail.webp";
 import cupncoThumb from "../assets/media/cupnco.webp";
 import unlvThumb from "../assets/media/unlvclassthumbnail.webp";
-import sonicThumb from "../assets/media/sonicai-sc2.webp";
+import sonicThumb from "../assets/media/sonicai-sc.webp";
 import professorBThumb from "../assets/media/professorbdesc.webp";
 import northboundThumb from "../assets/media/northbound-1.webp";
 
@@ -77,13 +77,9 @@ function Portfolio() {
     <div className="portfolio">
       <div className="header">
         <div className="name">
-          <p>Check out my latest work</p>
+          <p>PORTFOLIO</p>
         </div>
-        <h1>Check out my latest work</h1>
-        <p className="sub">
-          I've worked on a variety of projects, from simple websites to complex
-          web applications.
-        </p>
+        <h1>Featured Projects</h1>
       </div>
 
       <div className="showcase">

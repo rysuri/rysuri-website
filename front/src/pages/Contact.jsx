@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../css/pages/Contact.css";
-
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -44,7 +43,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact Me</h2>
+      <h2 className="header">Contact Me</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"

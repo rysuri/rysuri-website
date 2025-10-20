@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/components/ProjectCard.css";
 
+import { Globe, Github } from "lucide-react";
+
 function ProjectCard({
   title,
   description,
@@ -37,6 +39,7 @@ function ProjectCard({
               target="_blank"
               rel="noreferrer"
             >
+              <Globe className="info-icon" />
               Website
             </a>
           )}
@@ -47,6 +50,7 @@ function ProjectCard({
               target="_blank"
               rel="noreferrer"
             >
+              <Github className="info-icon-git" />
               Source
             </a>
           )}
