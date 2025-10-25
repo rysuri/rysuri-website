@@ -71,6 +71,10 @@
   background: #f3f4f6;
   color: #111827;
 }
+.card-btn--show {
+  background: #003cff;
+  color: #ffffff;
+}
 
 /* Icon sizing and spacing inside action buttons */
 .info-icon {
@@ -86,6 +90,14 @@
   flex: 0 0 16px; /* don't shrink */
   display: inline-block;
   color: #111827;
+}
+/* Icon sizing and spacing inside action buttons */
+.info-icon-show {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px; /* don't shrink */
+  display: inline-block;
+  color: #ffffff;
 }
 
 @media (max-width: 700px) {

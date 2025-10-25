@@ -14,7 +14,10 @@ import {
   FileDown,
 } from "lucide-react";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Home() {
+  gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.from("#hero-tag", {
       y: 20,
@@ -29,6 +32,26 @@ function Home() {
       y: -20,
       opacity: 0,
       duration: 0.7,
+    });
+    gsap.from(".about-me-section", {
+      scrollTrigger: {
+        // markers: true,
+        trigger: ".about-me-section",
+        toggleActions: "play none none none",
+
+        start: "20px 80%",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 0.9,
+    });
+    gsap.from(".comment-section", {
+      scrollTrigger: {
+        trigger: ".comment-section",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      duration: 1.7,
     });
   }, []);
   return (
@@ -91,18 +114,12 @@ function Home() {
                 <Award className="info-icon" /> AWS + CompTIA Certified
               </li>
             </ul>
-
             <p>
-              As a dedicated developer and student at the University of Nevada,
-              Las Vegas, I’m passionate about blending creativity with
-              technology. I focus on frontend and web application development,
-              while aspiring toward game design and AI-driven systems.
+              I specialize in creating web applications. I have been in this
+              field for over <strong>5 years</strong>, working on various
+              projects that range from passion projects to professional
+              websites.
             </p>
-            <div>
-              <p id="email">
-                <Mail className="info-icon" /> rysu986@gmail.com
-              </p>
-            </div>
           </div>
 
           <div className="about-right">
@@ -112,11 +129,11 @@ function Home() {
               <span>Python</span>
               <span>C++</span>
               <span>JavaScript</span>
-              <span>Assembly</span>
+              <span>AWS</span>
+              <span>MongoDB</span>
               <span>Shopify</span>
-              <span>WordPress</span>
               <span>Vue.js</span>
-              <span>Github</span>
+              <span>Git</span>
               <span>Lua</span>
             </div>
 
@@ -130,10 +147,10 @@ function Home() {
                 />
                 <div>
                   <strong>AWS Certified Cloud Practitioner</strong>
-                  <p>Issued Aug 2023</p>
+                  <p>Issued January 2025</p>
                 </div>
               </div>
-
+              {/* 
               <div className="cert-item">
                 <img
                   src="https://images.credly.com/size/340x340/images/a81e53e7-3649-4366-917d-9611bb74c10c/CompTIA_A_2B.png"
@@ -144,12 +161,12 @@ function Home() {
                   <strong>CompTIA A+ Certification</strong>
                   <p>Issued Aug 2023</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection className="comment-section" />
         {/* 
         <div className="end-directory">
           <h1>Oh wait there is more!</h1>

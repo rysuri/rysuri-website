@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/components/ProjectCard.css";
 
-import { Globe, Github } from "lucide-react";
+import { Globe, Github, Youtube } from "lucide-react";
 
 function ProjectCard({
   title,
@@ -10,6 +10,7 @@ function ProjectCard({
   technologies = [],
   website,
   source,
+  showcase,
 }) {
   return (
     <article className="card-container project-show">
@@ -41,6 +42,17 @@ function ProjectCard({
             >
               <Globe className="info-icon" />
               Website
+            </a>
+          )}
+          {showcase && (
+            <a
+              className="card-btn"
+              href={showcase}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Youtube className="info-icon-show" />
+              Showcase
             </a>
           )}
           {source && (

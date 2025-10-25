@@ -5,7 +5,9 @@ import { Linkedin, Youtube, Github, FileText } from "lucide-react";
 function Footer() {
   return (
     <footer className="footer">
-      <p>All rights reserved. | rysuri.com</p>
+      <p>
+        All rights reserved. | <strong>rysuri.com</strong>
+      </p>
       <a
         href="https://www.linkedin.com/in/rysuri/"
         target="_blank"
