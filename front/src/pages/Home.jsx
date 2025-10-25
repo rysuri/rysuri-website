@@ -128,6 +128,7 @@ function Home() {
               <span>React</span>
               <span>Python</span>
               <span>C++</span>
+              <span>Figma</span>
               <span>JavaScript</span>
               <span>AWS</span>
               <span>MongoDB</span>
