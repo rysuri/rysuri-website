@@ -123,7 +123,7 @@ function Home() {
           </div>
 
           <div className="about-right">
-            <h3>Skills and Languages</h3>
+            <h3>Skills and Technologies</h3>
             <div className="skills-grid">
               <span>React</span>
               <span>Python</span>
