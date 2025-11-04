@@ -160,15 +160,92 @@
    MOBILE
 =========================== */
 @media (max-width: 800px) {
-  .comment-container {
-    grid-template-columns: 1fr;
+  .comment-section {
+    padding: 0 1.5rem 8rem 1.5rem; /* Add left/right padding, reduce bottom */
+    margin: 3rem auto;
+    gap: 1rem;
   }
 
-  .comment-form {
+  .comment-title {
+    font-size: 1.5rem;
+  }
+
+  .comment-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Comments on top, form below */
+  .comment-right-column {
     order: 1;
   }
 
-  .comment-right-column {
+  .comment-form {
     order: 2;
+  }
+
+  .comment-form textarea {
+    min-height: 120px; /* Taller textarea on mobile */
+  }
+
+  .comment {
+    padding: 12px;
+  }
+
+  .comment-header {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .comment-date {
+    font-size: 12px;
+  }
+
+  .comment-message {
+    font-size: 14px;
+  }
+
+  .pagination {
+    padding: 15px 0 0 0;
+    flex-wrap: wrap;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .comment-section {
+    padding: 0 1rem 6rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .comment-title {
+    font-size: 1.3rem;
+  }
+
+  .comment-container {
+    gap: 1.2rem;
+  }
+
+  .comment {
+    padding: 10px;
+  }
+
+  .comment-header {
+    font-size: 14px;
+  }
+
+  .comment-message {
+    font-size: 13px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 }

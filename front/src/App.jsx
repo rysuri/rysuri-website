@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <GradualBlur
+      {/* <GradualBlur
         target="parent"
         position="bottom"
         height="6rem"
@@ -30,7 +30,7 @@ function App() {
         curve="bezier"
         exponential={true}
         opacity={1}
-      />
+      /> */}
       <Footer />
     </>
   );

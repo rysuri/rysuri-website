@@ -85,7 +85,7 @@ function Home() {
           </div>
 
           <h3 className="hero-name" id="hero-name">
-            RY SURIYATHEP
+            RY P. SURIYATHEP
           </h3>
 
           <h4 className="hero-tag" id="hero-tag">
