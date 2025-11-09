@@ -9,7 +9,6 @@
   font-family: "Inter", sans-serif;
   text-decoration: none;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .footer p {
@@ -46,11 +45,11 @@
 .footer-links {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 3rem;
 }
 
 /* Mobile responsive layout */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .footer {
     flex-direction: column;
     justify-content: center;
@@ -60,6 +59,9 @@
     gap: 1.5rem;
   }
 
+  .footer-links {
+    gap: 0.5rem;
+  }
   .footer p {
     width: 100%;
     margin-bottom: 0.5rem;

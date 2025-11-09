@@ -33,26 +33,26 @@ function Home() {
       opacity: 0,
       duration: 0.7,
     });
-    gsap.from(".about-me-section", {
-      scrollTrigger: {
-        // markers: true,
-        trigger: ".about-me-section",
-        toggleActions: "play none none none",
+    // gsap.from(".about-me-section", {
+    //   scrollTrigger: {
+    //     // markers: true,
+    //     trigger: ".about-me-section",
+    //     toggleActions: "play none none none",
 
-        start: "20px 80%",
-      },
-      y: 100,
-      opacity: 0,
-      duration: 0.9,
-    });
-    gsap.from(".comment-section", {
-      scrollTrigger: {
-        trigger: ".comment-section",
-        toggleActions: "play none none none",
-      },
-      opacity: 0,
-      duration: 1.7,
-    });
+    //     start: "20px 80%",
+    //   },
+    //   y: 100,
+    //   opacity: 0,
+    //   duration: 0.9,
+    // });
+    // gsap.from(".comment-section", {
+    //   scrollTrigger: {
+    //     trigger: ".comment-section",
+    //     toggleActions: "play none none none",
+    //   },
+    //   opacity: 0,
+    //   duration: 1.7,
+    // });
   }, []);
   return (
     <>
@@ -115,10 +115,12 @@ function Home() {
               </li>
             </ul>
             <p>
-              I specialize in creating web applications. I have been in this
-              field for over <strong>5 years</strong>, working on various
-              projects that range from passion projects to professional
-              websites.
+              I’m a web developer with over <strong>five years</strong> of
+              experience building responsive, user-focused applications. I work
+              with modern front-end frameworks like React and AWS. <br></br>{" "}
+              <br></br> My projects range from client websites and e-commerce
+              integrations to personal applications that showcase clean design
+              and reliable performance.
             </p>
           </div>
 

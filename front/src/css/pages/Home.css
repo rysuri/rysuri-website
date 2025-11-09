@@ -9,7 +9,7 @@
   display: block;
   align-items: center;
   text-align: center;
-  margin-top: 38vh;
+  margin-top: 40vh;
   margin-bottom: 50vh;
   color: #f9fafb;
 }
@@ -31,6 +31,8 @@
 
 .hero a {
   margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 12px;
@@ -53,7 +55,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 2rem;
+
   flex-wrap: wrap;
 }
 
@@ -65,7 +67,7 @@
 
 .link {
   position: relative;
-  padding: 6px 12px;
+  padding: 6px 0px;
   border-radius: 6px;
   transition: all 200ms ease;
   font-weight: 500;
@@ -74,14 +76,13 @@
 
 .link:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
 }
 
 .link::after {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: -2px;
   left: 50%;
   transform: translateX(-50%) scaleX(0);
   width: 70%;
