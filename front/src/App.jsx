@@ -1,5 +1,6 @@
 import "./css/App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -11,10 +12,16 @@ import Contact from "./pages/Contact.jsx";
 import GradualBlur from "./components/GradualBlur";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [location.pathname]);
+
   return (
     <>
       <NavBar />
-      <main className="main-content">
+      <main className="main-content" key={location.pathname}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />

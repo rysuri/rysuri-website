@@ -2,13 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/components/Navbar.css";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-
 import { User, Send, LibraryBig, Menu, X } from "lucide-react";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +17,6 @@ function NavBar() {
 
   const handleNavClick = () => {
     closeMenu();
-    console.log("Hello");
-    window.scrollTo({ top: 0 });
   };
 
   return (

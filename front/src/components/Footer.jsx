@@ -1,6 +1,7 @@
 import "../css/components/Footer.css";
 
 import { Linkedin, Youtube, Github, FileText } from "lucide-react";
+import resumePDF from "../assets/media/ry-suriyathep-resume.pdf";
 
 function Footer() {
   return (
@@ -33,7 +34,11 @@ function Footer() {
         >
           <Youtube />
         </a>
-        <a href="/resume.pdf" download className="link">
+        <a
+          href={resumePDF}
+          download="ry-suriyathep-resume.pdf"
+          className="link"
+        >
           <FileText />
         </a>
       </div>

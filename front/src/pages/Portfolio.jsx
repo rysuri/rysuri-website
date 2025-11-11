@@ -8,16 +8,27 @@ import unlvThumb from "../assets/media/unlvchecker-2.webp";
 import sonicThumb from "../assets/media/sonicai-sc.webp";
 import professorBThumb from "../assets/media/pbdesc.webp";
 import northboundThumb from "../assets/media/northbound-1.webp";
+import portfolio from "../assets/media/portfolio-sc.png";
 
 const SAMPLE = [
   {
     id: 1,
     title: "Calderon Law Website",
     description:
-      "Designed, built and maintain the Calderon Law website using WordPress — responsible for content updates, performance tuning, and UI improvements.",
+      "Developed and maintained a professional React website for a local law firm, integrating AWS Amplify for hosting, optimizing SEO, accessibility, and mobile responsiveness to enhance user experience.",
     image: calderonThumb,
-    technologies: ["WordPress", "PHP", "HTML", "CSS"],
+    technologies: ["React.js", "AWS", "HTML", "CSS"],
     website: "https://calderonlaw.com",
+  },
+  {
+    id: 6,
+    title: "Personal Portfolio Website",
+    description:
+      "Modern portfolio website showcasing projects and skills. Built with React Router for navigation, GSAP for animations, and features a responsive design with contact form integration.",
+    image: portfolio,
+    technologies: ["React.js", "Node.js", "GSAP", "MongoDB", "AWS"],
+    website: "https://rysuri.com",
+    source: "https://github.com/rysuri/rysuri-website",
   },
   {
     id: 2,
@@ -34,7 +45,7 @@ const SAMPLE = [
     description:
       "Serverless app that checks UNLV class availability and notifies students via SMS. Useful for grabbing open seats quickly.",
     image: unlvThumb,
-    technologies: ["Python", "Twilio", "Serverless"],
+    technologies: ["Python", "Beautiful Soup", "Selenium"],
     showcase: "https://www.youtube.com/watch?v=fGZCPPwg4sg",
     source: "https://github.com/rysuri/unlvclasschecker",
   },
@@ -57,8 +68,9 @@ const SAMPLE = [
     technologies: ["Python", "OpenAI", "Discord.py"],
     website: "https://discord.com/invite/QZqghTe2k8",
   },
+
   {
-    id: 6,
+    id: 7,
     title: "Northbound — Web Slot Machine",
     description:
       "Interactive browser-based slot machine with randomized outcomes, a responsive UI and replayable mechanics.",
