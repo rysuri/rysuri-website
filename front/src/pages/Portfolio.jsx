@@ -31,13 +31,14 @@ const SAMPLE = [
     source: "https://github.com/rysuri/rysuri-website",
   },
   {
-    id: 2,
-    title: "CupnCoShop",
+    id: 4,
+    title: "Sonic Drive-Thru — AI Assistant",
     description:
-      "E-commerce storefront for premium coffee accessories. Theme customization, product configuration and ongoing maintenance on Shopify.",
-    image: cupncoThumb,
-    technologies: ["Shopify", "HTML", "CSS"],
-    website: "https://cupncoshop.com",
+      "AI-powered drive-thru assistant prototype that demonstrates conversational ordering workflows and automated responses using OpenAI.",
+    image: sonicThumb,
+    technologies: ["OpenAI", "Node.js", "HTML", "CSS"],
+    showcase: "https://www.youtube.com/watch?v=wvswuT8gdro",
+    source: "https://github.com/rysuri/SonicMenu",
   },
   {
     id: 3,
@@ -49,15 +50,15 @@ const SAMPLE = [
     showcase: "https://www.youtube.com/watch?v=fGZCPPwg4sg",
     source: "https://github.com/rysuri/unlvclasschecker",
   },
+
   {
-    id: 4,
-    title: "Sonic Drive-Thru — AI Assistant",
+    id: 2,
+    title: "CupnCoShop",
     description:
-      "AI-powered drive-thru assistant prototype that demonstrates conversational ordering workflows and automated responses using OpenAI.",
-    image: sonicThumb,
-    technologies: ["OpenAI", "Node.js", "HTML", "CSS"],
-    showcase: "https://www.youtube.com/watch?v=wvswuT8gdro",
-    source: "https://github.com/rysuri/SonicMenu",
+      "E-commerce storefront for premium coffee accessories. Theme customization, product configuration and ongoing maintenance on Shopify.",
+    image: cupncoThumb,
+    technologies: ["Shopify", "HTML", "CSS"],
+    website: "https://cupncoshop.com",
   },
   {
     id: 5,
@@ -69,16 +70,16 @@ const SAMPLE = [
     website: "https://discord.com/invite/QZqghTe2k8",
   },
 
-  {
-    id: 7,
-    title: "Northbound — Web Slot Machine",
-    description:
-      "Interactive browser-based slot machine with randomized outcomes, a responsive UI and replayable mechanics.",
-    image: northboundThumb,
-    technologies: ["HTML", "CSS", "JavaScript"],
-    website: "#",
-    source: "#",
-  },
+  // {
+  //   id: 7,
+  //   title: "Northbound — Web Slot Machine",
+  //   description:
+  //     "Interactive browser-based slot machine with randomized outcomes, a responsive UI and replayable mechanics.",
+  //   image: northboundThumb,
+  //   technologies: ["HTML", "CSS", "JavaScript"],
+  //   website: "#",
+  //   source: "#",
+  // },
 ];
 
 function Portfolio() {
