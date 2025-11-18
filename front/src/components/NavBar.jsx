@@ -44,9 +44,9 @@ function NavBar() {
             <User className="info-icon-nav" />
             About
           </Link>
-          <Link to="/portfolio" className="nav-link" onClick={handleNavClick}>
+          <Link to="/projects" className="nav-link" onClick={handleNavClick}>
             <LibraryBig className="info-icon-nav" />
-            Portfolio
+            Projects
           </Link>
           <Link to="/contact" className="nav-link" onClick={handleNavClick}>
             <Send className="info-icon-nav" />

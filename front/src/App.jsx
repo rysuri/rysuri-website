@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 
 import Home from "./pages/Home.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
+import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 
 import GradualBlur from "./components/GradualBlur";
@@ -24,7 +24,7 @@ function App() {
       <main className="main-content" key={location.pathname}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

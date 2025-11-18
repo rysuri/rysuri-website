@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
-import "../css/pages/Porfolio.css";
+import "../css/pages/Projects.css";
 
 // Project media imports (screenshots and thumbnails from your assets)
 import calderonThumb from "../assets/media/calderon-thumbnail.webp";
@@ -87,7 +87,7 @@ function Portfolio() {
     <div className="portfolio">
       <div className="header">
         <div className="name">
-          <p>PORTFOLIO</p>
+          <p>The proof is in the...</p>
         </div>
         <h1>Featured Projects</h1>
       </div>
