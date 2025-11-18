@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "../css/pages/Home.css";
 import { Link } from "react-router-dom";
+import resumePDF from "../assets/media/ry-suriyathep-resume.pdf";
 
 import CommentSection from "../components/CommentSection.jsx";
 import {
@@ -61,8 +62,9 @@ function Home() {
           <div className="hero-links" id="hero-links">
             <a
               className="link"
-              href="https://docs.google.com/document/d/1OsWHSLnUA-n_WKq6hNvaLf2t8kVH6hJx_6Pbf2tsuxE/edit?tab=t.0"
+              href={resumePDF}
               target="_blank"
+              download="ry-suriyathep-resume.pdf"
             >
               Resume
             </a>
